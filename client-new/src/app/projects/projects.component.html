@@ -1,0 +1,15 @@
+<div class="container">
+
+  <div class="Projekti">
+    <h3>Projects by far</h3>
+    <div class="lista" *ngFor ="let p of projects; index as i">
+    {{projects[i].name}}: {{projects[i].description}}
+        <div>
+             <button class="edit" (click)="Edit(projects[i].id)" routerLink="edit">&#9998;</button>
+            <button class="remove" (click)="Delete(projects[i].id)" >&times;</button> 
+        </div>
+    </div>
+    <button class="add" (click) = "Add()" routerLink="add">Add</button>
+  </div>
+</div>
+

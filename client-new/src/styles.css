@@ -1,0 +1,10 @@
+html, body {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    background: rgb(237, 241, 241);
+    min-width: 576px;
+}
+
+app-root {
+    height: 100%;
+}

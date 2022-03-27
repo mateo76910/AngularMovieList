@@ -1,0 +1,11 @@
+.profile-container {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-size: 150%!important;
+    background-position: center!important;
+}
+ h1 {
+    font-size: 48px;
+    font-weight: 700;
+}

@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="EditForm" *ngIf="isEdit">
+        <h3>Edit Project</h3>
+     <form #myform="ngForm">
+         <div>
+     
+             <input type="text" placeholder="Name" name="ime" [(ngModel)]="ime">
+         </div>
+             <textarea cols="30" rows="10" placeholder="Description" name="opis" [(ngModel)]="opis"></textarea>
+     </form>
+     <button type="button" class="forma"  routerLink="/projects" (click)="All()">All Projects</button>
+     <button type="button" class="forma" id="drugi" (click)="Submit();myform.reset()" routerLink="/projects">Submit</button>
+   </div> 
+ 
+ 
+ 
+   <div class="AddForm" *ngIf="!isEdit">
+     <h3>New project</h3>
+  <form #myform="ngForm">
+      <div>
+  
+          <input type="text" placeholder="Name" name="ime" [(ngModel)]="ime">
+      </div>
+          <textarea cols="30" rows="10" placeholder="Description" name="opis" [(ngModel)]="opis"></textarea>
+  </form>
+  <button type="button" class="forma"  routerLink="/projects" (click)="All()">All Projects</button>
+  <button type="button" class="forma" id="drugi" (click)="Submit();myform.reset()" routerLink="/projects">Submit</button>
+ </div> 
+</div>

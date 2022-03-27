@@ -1,0 +1,44 @@
+.container {
+    height: calc(100% - 100px);
+    margin: 0 100px;
+    background: white;
+    padding: 30px;
+}
+
+header {
+    height: 50px;
+    background: teal;
+}
+
+header > nav {
+    display: flex;
+    height: 100%;
+}
+
+header > nav > div, header > nav > ul > li {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > nav > ul {
+    display: flex;
+    height: 100%;
+}
+
+a {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+a:hover, a.active {
+    color: rgb(23, 75, 75);
+    background: rgb(104, 185, 185);
+}
